@@ -1,6 +1,6 @@
 ---
 title: "Problem Set 2: Data Wrangling"
-author: Your Name Here
+author: Hannah Paley 
 output: pdf_document
 ---
 
@@ -38,6 +38,18 @@ Political advertising has traditionally been focused on the medium of television
 ## Question 1 (8 points)
 
 Load the data using the `read_csv` function and save it as `fb_ads` (using this will automatically make `fb_ads` a tibble). In the text, describe how many candidates there are in the dataset. 
+```{r}
+library(tidyverse)
+fb_ads <-read_csv("data/fb_ads.csv")
+fb_ads
+```
+
+There are 7,014 candidates in the dataset. 
+
+```{r}
+
+```
+
 
 Use `dplyr` functions to create a table with the number of candidates in each type of incumbency status in the data set. Save this table output as `incumbency_table` (for the autograder). Use the function `knitr::kable()` on this table to have a nicely formatted table produced in the knitted output. 
 
