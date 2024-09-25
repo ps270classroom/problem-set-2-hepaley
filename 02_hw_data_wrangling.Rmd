@@ -101,8 +101,11 @@ Create a histogram of this variable for just the US House races. Save the ggplot
 
 ## Answer 3
 ```{r}
-impressions_millions <- 
-  fb_ads
+library(dplyr)
+ fb_ads <- fb_ads |> mutate(impressions_millions = impressions/1,000,000 ) 
+fb_ads
+  
+
 ```
 
 
